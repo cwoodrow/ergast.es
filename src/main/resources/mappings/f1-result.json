@@ -1,0 +1,25 @@
+{
+  "result": {
+    "dynamic_templates": [
+      {
+        "strings": {
+          "match_mapping_type": "string",
+          "mapping": {
+            "type": "string",
+            "index": "not_analyzed",
+            "ignore_above": 256
+          }
+        }
+      }
+    ],
+    "properties" : {
+      "circuit" : {
+        "properties" : {
+          "geopoint" : {
+            "type": "geo_point"
+          }
+        }
+      }
+    }
+  }
+}

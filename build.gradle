@@ -1,0 +1,20 @@
+group 'com.woodrow'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "com.cwoodrow.ergast.es.Loader"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'io.searchbox:jest:2.0.2'
+    compile 'mysql:mysql-connector-java:5.1.6'
+    compile 'org.codejargon:fluentjdbc:1.0.2'
+    testCompile 'junit:junit:4.11'
+}
